@@ -59,7 +59,6 @@ features = np.array(features).reshape(-1, 30)
 next_pos = np.array(next_pos).reshape(-1, 3)
 print(features.shape)
 
-dataFrame = np.hstack((features,next_pos))
+np.save("features.npy",dataFrame)
+np.save("output.npy",next_pos)
 
-
-np.save("dataFrame.npy",dataFrame)
